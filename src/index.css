@@ -73,11 +73,33 @@ p {
     margin: 10px;
   }
 
-  .task-item div {
-    flex-direction: column;
-    align-items: flex-start;
+  .task-item {
+    display: block;
+    margin-bottom: 10px;
   }
-  button {
+
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .task-item span {
+    display: block;
+  }
+
+  .task-item button {
     margin-top: 5px;
+    margin-left: 0;
+  }
+
+}
+
+@media(max-width: 330px) {
+
+  .container input[type="text"] {
+    display: block;
+  }
+  .add-button {
+    margin-top: 5px;
+    margin-left: 0px;
   }
 }
